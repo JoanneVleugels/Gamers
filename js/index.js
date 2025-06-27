@@ -1,8 +1,8 @@
-let userScore= 0; // beginscore
-let computerScore= 0; // beginscore 
+let userScore= 0; 
+let computerScore= 0; 
 let computerChoice
-const userScoreText= document.querySelector("#scoreboardusers"); //HTML variabele dat dom elementen opslaat. # voor ID
-const computerScoreText= document.querySelector("#scoreboardcomputer"); // Span aangezien ze bijde in dezelfde zin staan "inline".
+const userScoreText= document.querySelector("#scoreboardusers"); 
+const computerScoreText= document.querySelector("#scoreboardcomputer"); 
 const messageDiv= document.querySelector(".message");
 const steenDiv= document.querySelector("#steen");
 const papierDiv= document.querySelector("#papier");
@@ -19,7 +19,7 @@ function getComputerChoice() {
 getComputerChoice()
 
 function win(user, computer) {
-    userScore++; //wanneer user wint gaat de score omhoog.
+    userScore++; //wanneer user wint gaat de score omhoog +1.
     userScoreText.textContent = userScore;
     computerScoreText.textContent = computerScore;
     messageDiv.textContent = words(user) + " destroys " + words(computer) + "!! Good job ;3 You WIN!";
@@ -68,7 +68,7 @@ function game(userChoice) {
     getComputerChoice()
 }
 
-steenDiv.addEventListener('click', function(){ // wanneer event click plaatsvindt op SteenDiv wordt de functies uitgevoerd.
+steenDiv.addEventListener('click', function(){
     game("steen");
 })
 papierDiv.addEventListener('click', function(){
