@@ -1,0 +1,90 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: rgb(218, 218, 248);
+    text-align: center;
+    font-family:Impact;
+    margin-top: 4em;
+}
+
+body.win-bg {
+    background-color: #d9edde; 
+    transition: background-color 0.6s ease;
+}
+
+body.lose-bg {
+    background-color: #ebbebe; 
+    transition: background-color 0.6s ease;
+}
+
+h1 {
+    font-size: 700%;
+    color: rgb(115, 121, 189);
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 400%;
+    color: rgb(56, 56, 101);
+    text-transform: uppercase;
+}
+
+.tools {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+    padding-bottom: 2.5em;
+}
+
+.tool img {
+    width: 60%;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.tool img:hover {
+    transform:scale(1.1);
+}
+
+#papier {
+    padding-left: 4em;
+}
+
+.score {
+    font-size: 600%;
+    color: rgb(216, 41, 88);
+    display: flex;
+    justify-content: center;
+    background-color: rgb(252, 233, 250);
+    border-radius: 4pc;
+    margin-left: 4.5em;
+    margin-right: 4.5em;
+}
+
+.number {
+    font-size: 60%;
+}
+
+#user {
+    position: absolute;
+    padding-right: 6em;
+    padding-top: 0.5em;
+    color: rgb(56, 56, 101);
+}
+
+#computer {
+    position: absolute;
+    padding-left: 6.5em;
+    padding-top: 0.5em;
+    color: rgb(56, 56, 101);
+}
+
+.message {
+    font-size: 300%;
+    color: rgb(115, 121, 189);
+    margin-top: 1em;
+}
+
